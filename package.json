@@ -1,0 +1,15 @@
+{
+  "name": "biblio-fullstack",
+  "version": "1.0.0",
+  "description": "Sistema Bibliotecario - Backend + Frontend",
+  "scripts": {
+    "start": "concurrently \"npm run backend\" \"npm run frontend\"",
+    "backend": "cd Backend && npm start",
+    "frontend": "cd Frontend && npm run dev",
+    "dev": "concurrently \"npm run backend:dev\" \"npm run frontend\"",
+    "backend:dev": "cd Backend && npm run dev"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
